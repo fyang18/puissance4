@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
+    <title>PUISSANCE-4</title>
+</head>
+
+<body>
+    <!-- Bande son caché qui le lance à louverture de page et tourne en boucle -->
+    <audio controls="controls" hidden="true" loop="true" autoplay="autoplay">
+        <source src="son\music2.mp3" >
+    </audio>
+    <section>
+        <div id="gauche">
+            <header>
+                <h1 class="titre">Puissance 4</h1>
+            </header>
+            <div>
+                <table id="grille">
+                    <tr id="ligne0">
+                        <td id="cell00"></td>
+                        <td id="cell01"></td>
+                        <td id="cell02"></td>
+                        <td id="cell03"></td>
+                        <td id="cell04"></td>
+                        <td id="cell05"></td>
+                        <td id="cell06"></td>
+                    </tr>
+                    <tr id="ligne1">
+                        <td id="cell10"></td>
+                        <td id="cell11"></td>
+                        <td id="cell12"></td>
+                        <td id="cell13"></td>
+                        <td id="cell14"></td>
+                        <td id="cell15"></td>
+                        <td id="cell16"></td>
+                    </tr>
+                    <tr id="ligne2">
+                        <td id="cell20"></td>
+                        <td id="cell21"></td>
+                        <td id="cell22"></td>
+                        <td id="cell23"></td>
+                        <td id="cell24"></td>
+                        <td id="cell25"></td>
+                        <td id="cell26"></td>
+                    </tr>
+                    <tr id="ligne3">
+                        <td id="cell30"></td>
+                        <td id="cell31"></td>
+                        <td id="cell32"></td>
+                        <td id="cell33"></td>
+                        <td id="cell34"></td>
+                        <td id="cell35"></td>
+                        <td id="cell36"></td>
+                    </tr>
+                    <tr id="ligne4">
+                        <td id="cell40"></td>
+                        <td id="cell41"></td>
+                        <td id="cell42"></td>
+                        <td id="cell43"></td>
+                        <td id="cell44"></td>
+                        <td id="cell45"></td>
+                        <td id="cell46"></td>
+                    </tr>                
+                    <tr id="ligne5">
+                        <td id="cell50"></td>
+                        <td id="cell51"></td>
+                        <td id="cell52"></td>
+                        <td id="cell53"></td>
+                        <td id="cell54"></td>
+                        <td id="cell55"></td>
+                        <td id="cell56"></td>
+                    </tr>                
+                    <tr id="ligne6">
+                        <td id="cell60"></td>
+                        <td id="cell61"></td>
+                        <td id="cell62"></td>
+                        <td id="cell63"></td>
+                        <td id="cell64"></td>
+                        <td id="cell65"></td>
+                        <td id="cell66"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="droite">
+            <!-- div compteur et score -->
+            <div id="compteur">
+                <div id="compteurRouge">
+                    <div id="compteurRougeHaut">Rouge</div>
+                    <div id="compteurRougeBas"></div>
+                </div>
+                <div id="compteurJaune">
+                    <div id="compteurJauneHaut">Jaune</div>
+                    <div id="compteurJauneBas"></div>
+                </div>
+            </div>
+            <!-- div qui contient le joueur actif -->
+            <div id="joueurActif">
+            </div>
+            <!-- div reset -->
+            <div>
+                <button id="nouvellePartie">New game</button>
+            </div>
+        </div>       
+    </section>
+    <footer>
+        <!--ALT 0169 pour ©-->
+        <p>© 2019 Powered by Sifu Francis</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
